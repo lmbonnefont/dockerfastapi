@@ -7,3 +7,7 @@ local-run:
 
 build:
 	python3 -m venv venv
+
+build-image:
+	docker build -t fastapilm .
+	docker run -it --rm fastapilm
